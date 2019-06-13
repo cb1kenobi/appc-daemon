@@ -1,3 +1,7 @@
+# v1.3.4 (Jun 13, 2019)
+
+ * Republish of v1.3.1.
+
 # v1.3.1 (Mar 29, 2019)
 
  * Fixed unhandled exception when attempting to spawn the Appc Daemon.
