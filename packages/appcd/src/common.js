@@ -280,7 +280,7 @@ export async function startServer({ cfg, argv }) {
 		if (debug || debugInspect) {
 			// on Windows, we have to manually listen for ctrl+c to be pressed, then send an IPC
 			// message to the core process
-			if (process.platform === 'win32' && process.stdin && process.stdin.isTTY) {
+			if (process.platform === 'win32' && process.stdin?.isTTY) {
 				process.stdin.setRawMode(true);
 				process.stdin.on('data',  data => {
 					if (child.connected && data.length === 1 && data[0] === 0x03) {
